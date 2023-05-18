@@ -18,24 +18,32 @@ const renderTableOfContents = () => {
 - [Descrption](#description)
 - [Installation](#installation)
 - [Usage](#usage)
+- [Contribution](#contribution)
 - [Credits](#credits)
 - [License](#license)
 
 `;
 }
 
-const renderInstallation = () => {
-  return `## Installation
-npm install
-
-`;
+const renderInstallation = (installation) => {
+  return "## Installation\n```bash\nnpm install\n```\n" + installation + "\n";
 }
 
 const renderUsage = (usage) => {
-  return `## Usage
-${usage}
+  return "## Usage\n```bash\nnode index.js\n```\n" + usage + "\n";
+}
 
-`;
+const renderTests = (tests) => {
+  return `## Tests
+${tests}
+
+`
+}
+const renderContribution = (contribution) => {
+  return `## Contribution
+${contribution}
+
+`
 }
 
 const renderCredits = (fname, lname) => {
@@ -44,15 +52,23 @@ Made by: ${fname} ${lname}
 
 `
 }
+
+const renderGithub = (github) => {
+  return `## Github
+Github: [${github}](https://www.github.com/${github})
+`
+}
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = (license) => { 
   switch (license) {
     case 'MIT':
-        return `## License
-  MIT
-
-  `;
+        return `[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)\n`;
+      break;
+    
+    case 'unlicense':
+      return `[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)\n`;
       break;
     default:
       return "Other";
@@ -78,8 +94,9 @@ Permission is hereby granted, free of charge, to any person obtaining a copy of 
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
 `;
-    case 'unilicense':
+    case 'unlicense':
       return `## License
 
 ### The Unilicense
@@ -104,15 +121,18 @@ For more information, please refer to <http://unlicense.org/>
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const { fname, lname, title, description, usage, location, hex, linkedin, github, license } = data;
+  const { fname, lname, title, description, installation, usage, contribution, tests, github, license } = data;
   let markdown = renderTitle(title);
+  markdown += renderLicenseBadge(license);
   markdown += renderTableOfContents();
   markdown += renderDescription(description);
-  markdown += renderInstallation();
+  markdown += renderInstallation(installation);
   markdown += renderUsage(usage);
-  markdown += renderCredits(fname, lname);
+  markdown += renderContribution(contribution);
+  markdown += renderTests(tests);
+  markdown += renderGithub(github);
   markdown += renderLicense(license);
-  markdown += renderLicenseBadge(license);
+  markdown += renderCredits(fname, lname);
 
   return markdown;
 }
