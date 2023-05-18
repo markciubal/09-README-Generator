@@ -75,7 +75,12 @@ class ReadmeGenerator {
             },
             {
                 type: 'input',
-                message: 'What is your GitHub address?',
+                message: 'Do you have any questions for this project?',
+                name: 'questions',
+            },
+            {
+                type: 'input',
+                message: 'What is your GitHub username?',
                 name: 'github',
             },
             {

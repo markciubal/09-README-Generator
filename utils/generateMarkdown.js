@@ -62,6 +62,13 @@ Github: [${github}](https://www.github.com/${github})
 `
 }
 
+const renderQuestions = (questions) => {
+  return `## Questions
+  ${questions}
+
+  `
+}
+
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = (license) => { 
@@ -124,7 +131,7 @@ For more information, please refer to <http://unlicense.org/>
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const { fname, lname, title, description, installation, usage, contribution, tests, github, license } = data;
+  const { fname, lname, title, description, installation, usage, contribution, tests, questions, github, license } = data;
   let markdown = renderTitle(title);
   markdown += renderLicenseBadge(license);
   markdown += renderTableOfContents();
@@ -133,6 +140,7 @@ function generateMarkdown(data) {
   markdown += renderUsage(usage);
   markdown += renderContribution(contribution);
   markdown += renderTests(tests);
+  markdown += renderQuestions(questions);
   markdown += renderGithub(github);
   markdown += renderLicense(license);
   markdown += renderCredits(fname, lname);
