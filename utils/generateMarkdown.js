@@ -19,8 +19,10 @@ const renderTableOfContents = () => {
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
-- [Credits](#credits)
+- [Tests](#tests)
+- [Github](#github)
 - [License](#license)
+- [Credits](#credits)
 
 `;
 }
@@ -56,6 +58,7 @@ Made by: ${fname} ${lname}
 const renderGithub = (github) => {
   return `## Github
 Github: [${github}](https://www.github.com/${github})
+
 `
 }
 
