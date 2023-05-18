@@ -19,6 +19,7 @@ const renderTableOfContents = () => {
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
+- [Questions](#questions)
 - [Tests](#tests)
 - [Github](#github)
 - [License](#license)
@@ -62,8 +63,12 @@ Github: [${github}](https://www.github.com/${github})
 `
 }
 
-const renderQuestions = (questions) => {
+const renderQuestions = (questions, email) => {
   return `## Questions
+  ### Have questions for me?
+  [Email me!](mailto:${email})
+
+  ### Know anything about this?
   ${questions}
 
   `
@@ -109,7 +114,7 @@ THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR I
     case 'unlicense':
       return `## License
 
-### The Unilicense
+### The Unlicense
 
 This is free and unencumbered software released into the public domain.
 
@@ -131,7 +136,7 @@ For more information, please refer to <http://unlicense.org/>
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  const { fname, lname, title, description, installation, usage, contribution, tests, questions, github, license } = data;
+  const { fname, lname, title, description, installation, usage, contribution, tests, questions, email, github, license } = data;
   let markdown = renderTitle(title);
   markdown += renderLicenseBadge(license);
   markdown += renderTableOfContents();
@@ -140,7 +145,7 @@ function generateMarkdown(data) {
   markdown += renderUsage(usage);
   markdown += renderContribution(contribution);
   markdown += renderTests(tests);
-  markdown += renderQuestions(questions);
+  markdown += renderQuestions(questions, email);
   markdown += renderGithub(github);
   markdown += renderLicense(license);
   markdown += renderCredits(fname, lname);

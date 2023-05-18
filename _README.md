@@ -1,4 +1,4 @@
-# Forge
+# Dreadnaught
   
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Table of Contents
@@ -8,30 +8,35 @@
 - [Contribution](#contribution)
 - [Tests](#tests)
 - [Github](#github)
+- [Questions](#questions)
 - [License](#license)
 - [Credits](#credits)
 
 ## Description
-Forge is an application that allows you to ....
+Dradnaught is an application that allows users to ...
 
 ## Installation
 ```bash
 npm install
 ```
-As any other node.js application.
+npm i
 ## Usage
 ```bash
 node index.js
 ```
-npm start
+npm run start
 ## Contribution
-Click on my GitHub profile to see support links!
+Submit a pull request!
 
 ## Tests
 npm run test
 
 ## Questions
-  undefined
+  ### Have questions for me?
+  [Email me!](mailto:mark.ciubal@gmail.com)
+
+  ### Know anything about this?
+  If you ...
 
   ## Github
 Github: [markciubal](https://www.github.com/markciubal)
