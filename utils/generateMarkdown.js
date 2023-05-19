@@ -5,6 +5,7 @@ const renderTitle = (title) => {
 `;
 }
 
+// Render description.
 const renderDescription = (description) => {
   let descriptionMarkdown = `## Description
 ${description}
@@ -13,6 +14,7 @@ ${description}
   return descriptionMarkdown;
 }
 
+// Table of contents.
 const renderTableOfContents = () => {
   return `## Table of Contents
 - [Descrption](#description)
@@ -28,20 +30,25 @@ const renderTableOfContents = () => {
 `;
 }
 
+// Installation instructions.
 const renderInstallation = (installation) => {
   return "## Installation\n```bash\nnpm install\n```\n" + installation + "\n\n";
 }
 
+// Usage instructions.
 const renderUsage = (usage) => {
   return "## Usage\n```bash\nnode index.js\n```\n" + usage + "\n\n";
 }
 
+// Test instructions.
 const renderTests = (tests) => {
   return `## Tests
 ${tests}
 
 `
 }
+
+// Contribution instructions.
 const renderContribution = (contribution) => {
   return `## Contribution
 ${contribution}
@@ -49,6 +56,7 @@ ${contribution}
 `
 }
 
+// Show credits.
 const renderCredits = (fname, lname) => {
   return `## Credits
 Made by: ${fname} ${lname}
@@ -56,6 +64,7 @@ Made by: ${fname} ${lname}
 `
 }
 
+// Render GitHub profile link.
 const renderGithub = (github) => {
   return `## Github
 Github: [${github}](https://www.github.com/${github})
@@ -63,6 +72,7 @@ Github: [${github}](https://www.github.com/${github})
 `
 }
 
+// Render question section.
 const renderQuestions = (questions, email) => {
   return `## Questions
 ### Have questions for me?

@@ -52,7 +52,6 @@ class ReadmeGenerator {
                 message: 'How would you describe your project?',
                 name: 'description',
             },
-            //description, installation instructions, usage information, contribution guidelines, and test instructions
             {
                 type: 'input',
                 message: 'What are the installation instructions?',
@@ -116,9 +115,6 @@ class ReadmeGenerator {
             })
     }
 }
-// TODO: Create a function to initialize app
+// Initialize application.
 const readme = new ReadmeGenerator();
 readme.askQuestions(); 
-
-// Function call to initialize app
-// init();
