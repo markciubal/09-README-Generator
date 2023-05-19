@@ -29,11 +29,11 @@ const renderTableOfContents = () => {
 }
 
 const renderInstallation = (installation) => {
-  return "## Installation\n```bash\nnpm install\n```\n" + installation + "\n";
+  return "## Installation\n```bash\nnpm install\n```\n" + installation + "\n\n";
 }
 
 const renderUsage = (usage) => {
-  return "## Usage\n```bash\nnode index.js\n```\n" + usage + "\n";
+  return "## Usage\n```bash\nnode index.js\n```\n" + usage + "\n\n";
 }
 
 const renderTests = (tests) => {
@@ -65,13 +65,13 @@ Github: [${github}](https://www.github.com/${github})
 
 const renderQuestions = (questions, email) => {
   return `## Questions
-  ### Have questions for me?
-  [Email me!](mailto:${email})
+### Have questions for me?
+[Email me!](mailto:${email})
 
-  ### Know anything about this?
-  ${questions}
+### Outstanding Questions
+${questions}
 
-  `
+`
 }
 
 // TODO: Create a function that returns a license badge based on which license is passed in
