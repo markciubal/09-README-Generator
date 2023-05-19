@@ -1,4 +1,4 @@
-# Dreadnaught
+# README-o-Matic
   
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Table of Contents
@@ -6,44 +6,46 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
+- [Questions](#questions)
 - [Tests](#tests)
 - [Github](#github)
-- [Questions](#questions)
 - [License](#license)
 - [Credits](#credits)
 
 ## Description
-Dradnaught is an application that allows users to ...
+README-o-Matic takes the hard part out of making README files so that you can spend your time doing things you love. Like, coding.
 
 ## Installation
 ```bash
 npm install
 ```
-npm i
+npm install
+
 ## Usage
 ```bash
 node index.js
 ```
-npm run start
+node index.js
+
 ## Contribution
-Submit a pull request!
+Submit a merge request!
 
 ## Tests
-npm run test
+No tests available for this application.
 
 ## Questions
-  ### Have questions for me?
-  [Email me!](mailto:mark.ciubal@gmail.com)
+### Have questions for me?
+[Email me!](mailto:mark.ciubal@gmail.com)
 
-  ### Know anything about this?
-  If you ...
+### Outstanding Questions
+N/A
 
-  ## Github
+## Github
 Github: [markciubal](https://www.github.com/markciubal)
 
 ## License
 
-### The Unilicense
+### The Unlicense
 
 This is free and unencumbered software released into the public domain.
 
