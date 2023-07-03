@@ -1,6 +1,4 @@
-# 09-README-o-Matic
-
-<video src='https://github.com/markciubal/09-README-Generator/assets/1228604/9d0b402d-9041-4efe-94f3-a9d7b6dde4fc' width=300/>
+# README-O-MATIC
   
 [![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)
 ## Table of Contents
@@ -8,52 +6,32 @@
 - [Installation](#installation)
 - [Usage](#usage)
 - [Contribution](#contribution)
+- [Questions](#questions)
 - [Tests](#tests)
 - [Github](#github)
-- [Questions](#questions)
 - [License](#license)
 - [Credits](#credits)
 
 ## Description
-README-o-Matic is a README generator based on the inquirer package.
-
-When prompted for various data points, README-o-Matic effectively and efficiently places this information in a README file so that you can get on with your day. Now, you can spend your free time on coding, or anything else you love to do. 
-
-This application was meant to satisfy the following user story:
-
-```md
-GIVEN a command-line application that accepts user input
-WHEN I am prompted for information about my application repository
-✅ THEN a high-quality, professional README.md is generated with the title of my project and sections entitled Description, Table of Contents, Installation, Usage, License, Contributing, Tests, and Questions
-WHEN I enter my project title
-✅ THEN this is displayed as the title of the README
-WHEN I enter a description, installation instructions, usage information, contribution guidelines, and test instructions
-✅ THEN this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
-WHEN I choose a license for my application from a list of options
-✅ THEN a badge for that license is added near the top of the README and a notice is added to the section of the README entitled License that explains which license the application is covered under
-WHEN I enter my GitHub username
-✅ THEN this is added to the section of the README entitled Questions, with a link to my GitHub profile
-WHEN I enter my email address
-✅  THEN this is added to the section of the README entitled Questions, with instructions on how to reach me with additional questions
-WHEN I click on the links in the Table of Contents
-✅ THEN I am taken to the corresponding section of the README
-```
+README-O-MATIC does what it says! It creates README files using the Inquirer library. With this library, we are able to use a command-line interface to create README files for all of our projects! I learned a lot about functions, and README synyntax with this program.
 
 ## Installation
 ```bash
 npm install
 ```
+node index.js
 
 ## Usage
 ```bash
 node index.js
 ```
+node index.js
 
 ## Contribution
-Want to see something changed? Submit a merge request!
+Submit bugs!
 
 ## Tests
-No tests for this application.
+Not available at this time.
 
 ## Questions
 ### Have questions for me?
@@ -67,7 +45,7 @@ Github: [markciubal](https://www.github.com/markciubal)
 
 ## License
 
-### The Unilicense
+### The Unlicense
 
 This is free and unencumbered software released into the public domain.
 
@@ -81,3 +59,4 @@ For more information, please refer to <http://unlicense.org/>
 
 ## Credits
 Made by: Mark Ciubal
+

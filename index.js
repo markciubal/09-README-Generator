@@ -109,7 +109,7 @@ class ReadmeGenerator {
         inquirer
             .prompt(questions)
             .then((response) => {
-                const filename = `_README.md`;
+                const filename = `README.md`;
                 this.writeToFile(filename, response);
                 console.log(`Successfully inquirered.`);
             })
